@@ -191,34 +191,14 @@
     document.addEventListener('DOMContentLoaded', () => {
       // Mock data for random fill
       const mockData = {
-        names: ['John Smith', 'Emily Johnson', 'Michael Williams', 'Jessica Brown', 'David Jones', 'Sarah Miller', 'John Smith', 'Emily Johnson', 'Michael Williams', 'Sophia Brown', 'William Jones', 'Olivia Garcia', 'James Miller', 'Ava Davis', 'Robert Rodriguez', 'Isabella Martinez', 'David Hernandez', 'Mia Lopez', 'Joseph Gonzalez', 'Charlotte Wilson', 'Charles Anderson', 'Amelia Thomas', 'Thomas Moore', 'Harper Jackson', 'Daniel White', 'Evelyn Harris'],
-        universities: ['International University of Science', 'Global Tech Institute', 'Metropolitan University', 'World Arts College', 'United Scholars University' 'Princeton University', 'Massachusetts Institute of Technology (MIT)', 'Harvard University', 'Stanford University', 'Yale University',,'University of Pennsylvania', 'California Institute of Technology (Caltech)', 'Duke University', 'Brown University', 'Johns Hopkins University', 'Northwestern University', 'Columbia University', 'Cornell University', 'University of Chicago', 'University of California, Berkeley (UC Berkeley)', 'University of California, Los Angeles (UCLA)', 'Carnegie Mellon University', 'Georgetown University', 'University of Michigan - Ann Arbor', 'New York University (NYU)'],
+        names: ['John Smith', 'Emily Johnson', 'Michael Williams', 'Jessica Brown', 'David Jones', 'Sarah Miller'],
+        universities: ['International University of Science', 'Global Tech Institute', 'Metropolitan University', 'World Arts College', 'United Scholars University'],
         faculties: ['Computer Science', 'International Relations', 'Medicine', 'Economics', 'Linguistics', 'Engineering'],
         addresses: [
-			'123 Main Street, Anytown, USA',
-			'456 Oak Avenue, Springfield, USA',
-			'789 Pine Lane, Metropolis, USA',
-			'101 Maple Drive, Gotham, USA'
-			'Princeton, NJ 08544, USA'
-			'77 Massachusetts Ave, Cambridge, MA 02139, USA'
-			'Cambridge, MA 02138, USA'
-			'Stanford, CA 94305, USA'
-			'New Haven, CT 06520, USA'
-			'Philadelphia, PA 19104, USA'
-			'1200 E California Blvd, Pasadena, CA 91125, USA'
-			'Durham, NC 27708, USA'
-			'Providence, RI 02912, USA'
-			'Baltimore, MD 21218, USA'
-			'Evanston, IL 60208, USA'
-			'New York, NY 10027, USA'
-			'Ithaca, NY 14853, USA'
-			'Chicago, IL 60637, USA'
-			'Berkeley, CA 94720, USA'
-			'Los Angeles, CA 90095, USA'
-			'Pittsburgh, PA 15213, USA'
-			'Washington, DC 20057, USA'
-			'Ann Arbor, MI 48109, USA'
-			'New York, NY 10003, USA'
+          '123 Main Street, Anytown, USA',
+          '456 Oak Avenue, Springfield, USA',
+          '789 Pine Lane, Metropolis, USA',
+          '101 Maple Drive, Gotham, USA'
         ]
       };
 
@@ -361,7 +341,7 @@
 
       randomFillBtn.addEventListener('click', () => {
         randomFillBtn.disabled = true;
-        const originalText = 'Random Fill All Info';
+        const originalText = 'Randomly Fill All Info';
         randomFillBtn.textContent = '...';
 
         try {
